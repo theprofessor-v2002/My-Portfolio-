@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio website Create!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header" class="btn1">Home</a></li>
+            <li><a href="#about" class="btn1">About</a></li>
+            <li><a href="#services" class="btn1">Services</a></li>
+            <li><a href="#portfolio" class="btn1">Portfolio</a></li>
+            <li><a href="#contact" class="btn1">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1 id="port" class="portfolio1 port">Welcome to My Portfolio!</h1>
+          <p>Web Designer</p>
+          <h1>Hey,I am <span>Vinay Kumar</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- End Header Section -->
+
+    <!-- Start About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="linkedin .png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Us</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+              incidunt labore placeat corrupti nihil, obcaecati at! Rerum
+              excepturi delectus nisi. Assumenda quam tempora maxime iure
+              expedita alias illo necessitatibus vero!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Desiging Web/ App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Builing android/ios App
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />Design training at NIT Raipur
+                </li>
+                <li><span>2020-2022</span><br />team lead at start app llc</li>
+                <li>
+                  <span>App Development</span><br />Builing android/ios App
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>UI/UX</span><br />Desiging Web/ App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Builing android/ios App
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Section -->
+
+    <!-- Service section start -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          repudiandae. Minima sunt nemo rerum consequatur ipsam laborum vero
+          dicta vel laboriosam eligendi, cupiditate perspiciatis saepe esse fuga
+          voluptatum! Architecto, expedita?
+        </p>
+        <div class="services-list">
+          <div>
+            <img src="lo-removebg-preview (1).png" />
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              ipsum blanditiis vel iure incidunt! Quam nesciunt voluptatum vero,
+              praesentium tempora repudiandae consequuntur veritatis dicta est
+              at iste, numquam veniam mollitia?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <img src="ui-removebg-preview.png" />
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              ipsum blanditiis vel iure incidunt! Quam nesciunt voluptatum vero,
+              praesentium tempora repudiandae consequuntur veritatis dicta est
+              at iste, numquam veniam mollitia?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <img src="app-removebg-preview.png" />
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              ipsum blanditiis vel iure incidunt! Quam nesciunt voluptatum vero,
+              praesentium tempora repudiandae consequuntur veritatis dicta est
+              at iste, numquam veniam mollitia?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service section end -->
+
+    <!-- Portfolio Section Start -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="work-list">
+          <div class="work">
+            <img src="logo2.webp" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium, libero.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="work.jpeg" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium, libero.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="mo.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium, libero.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Portfolio Section end -->
+
+    <!-- Contact Section end -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              >vinaypcs1999@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+91 7597626578</p>
+            <div class="social-icons">
+              <a
+                href="https://instagram.com/theprofessor_v?igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/vinay-kumar-6635b7236/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/theprofessor-v2002" target="_blank"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+            </div>
+            <a href="#" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Please enter your full name"
+                required
+              />
+              <input
+                type="Email"
+                name="Email"
+                placeholder="Please enter your email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Comment"
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn2"
+                onclick="alert('Thanks for your response!')"
+              >
+                submit
+              </button>
+              <button type="reset" class="btn btn2">reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright@ Cuda .<i class="fa-solid fa-heart"></i> make width by
+          @Vinay kumar
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Section end -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
